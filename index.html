@@ -1,3 +1,5 @@
+import math
+
 def peremeter_of_triangle():
     a = float(input('Side 1: '))
     b = float(input('Side 2: '))
@@ -24,12 +26,46 @@ def area_of_square():
 def circumference_of_circle():
     d = float(input('Radius: '))
 
-    return d * 2 * 3.14
+    return d * 2 * math.pi
 
 def area_of_circle():
     r = float(input('Radius: '))
 
-    return 3.14 * r**2
+    return math.pi * r**2
+
+def volume_of_sphere():
+    r = float(input('Radius: '))
+
+    return 4 * math.pi * r **3 / 3
+
+def surface_area_of_sphere():
+    r = float(input('Radius: '))
+
+    return 4 * math.pi * r **2
+
+def volume_of_cylinder():
+    r = float(input('Radius: '))
+    h = float(input('Height: '))
+
+    return math.pi * r **2 * h
+
+def lateral_area_cylinder():
+    r = float(input('Radius: '))
+    h = float(input('Height: '))
+
+    return 2 * math.pi * r * h
+
+def total_surface_area_cylinder():
+    r = float(input('Radius: '))
+    h = float(input('Height: '))
+
+    return (2 * math.pi * r * h) + (2 * math.pi * r **2)
+
+#  def volume_cone():
+
+#  def lateral_area_cone():
+
+#  def total_surface_area_cone():
 
 
 print('Welcome to my page for coding useful math equasions and some conversions. Enter a number that')
@@ -41,12 +77,20 @@ print('3. Peremeter of a square')
 print('4. Area of a square')
 print('5. Circumference of a circle')
 print('6. Area of the circle is')
-print('7. Quit having fun')
+print('7. Volume of a sphere')
+print('8. Surface area of a sphere')
+print('9. Volume of a cylinder')
+print('10. Lateral area of a cylinder')
+print('11. Total surface area of a cylinder')
+print('12. Volume of a cone')
+print('13. Lateral area of a cone')
+print('14. Total surface area of a cone')
+print('9. Quit having fun')
 
 answer = int(input('Enter number to open the function: '))
 
 if answer == 1:
-    print(perimeter_of_triangle())
+    print(peremeter_of_triangle())
 
 elif answer ==2:
     print(area_of_triangle())
@@ -64,7 +108,15 @@ elif answer == 6:
     print(area_of_circle())
 
 elif answer == 7:
-    print(complete_the_square())
+    print(volume_of_sphere())
 
+elif answer == 8:
+    print(surface_area_of_sphere())
+elif answer == 9:
+    print(volume_of_cylinder())
+elif answer == 10:
+    print(lateral_area_cylinder())
+elif answer == 11:
+    print(total_surface_area_cylinder())
 else:
     print('Quitting...')
