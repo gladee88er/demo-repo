@@ -1,2 +1,70 @@
-index.html
-<div>Hello!</div>
+def peremeter_of_triangle():
+    a = float(input('Side 1: '))
+    b = float(input('Side 2: '))
+    c = float(input('Side 3: '))
+
+    return a + b + c
+
+def area_of_triangle():
+    b = float(input('Base of the triangle: '))
+    h = float(input('Height of the triangle: '))
+
+    return .5 * b * h
+
+def peremeter_of_square():
+    s = float(input('Length of a side: '))
+
+    return s * 4
+
+def area_of_square():
+    s = float(input('Length of a side: '))
+
+    return s **2
+
+def circumference_of_circle():
+    d = float(input('Radius: '))
+
+    return d * 2 * 3.14
+
+def area_of_circle():
+    r = float(input('Radius: '))
+
+    return 3.14 * r**2
+
+
+print('Welcome to my page for coding useful math equasions and some conversions. Enter a number that')
+print('corresponds to the equation for quick answers.')
+print()
+print('1. Permeter of a triangle')
+print('2. Area of a triangle')
+print('3. Peremeter of a square')
+print('4. Area of a square')
+print('5. Circumference of a circle')
+print('6. Area of the circle is')
+print('7. Quit having fun')
+
+answer = int(input('Enter number to open the function: '))
+
+if answer == 1:
+    print(perimeter_of_triangle())
+
+elif answer ==2:
+    print(area_of_triangle())
+
+elif answer == 3:
+    print(peremeter_of_square())
+
+elif answer == 4:
+    print(area_of_square())
+
+elif answer == 5:
+    print(circumference_of_circle())
+
+elif answer == 6:
+    print(area_of_circle())
+
+elif answer == 7:
+    print(complete_the_square())
+
+else:
+    print('Quitting...')
