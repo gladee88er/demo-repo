@@ -67,6 +67,13 @@ def total_surface_area_cylinder():
 
 #  def total_surface_area_cone():
 
+def pythagorean_theorum():
+    a = float(input('What is side a?: '))
+    b = float(input('What is side b?: '))
+    c = float(input('What is side c?: '))
+
+    return a **2 + b **2 == c **2
+
 
 print('Welcome to my page for coding useful math equasions and some conversions. Enter a number that')
 print('corresponds to the equation for quick answers.')
@@ -85,7 +92,8 @@ print('11. Total surface area of a cylinder')
 print('12. Volume of a cone')
 print('13. Lateral area of a cone')
 print('14. Total surface area of a cone')
-print('9. Quit having fun')
+print('15. Pythagorean Theorum (a')
+print('16. Quit having fun')
 
 answer = int(input('Enter number to open the function: '))
 
@@ -118,5 +126,7 @@ elif answer == 10:
     print(lateral_area_cylinder())
 elif answer == 11:
     print(total_surface_area_cylinder())
+elif answer == 15:
+    print(pythagorean_theorum())
 else:
     print('Quitting...')
