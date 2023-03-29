@@ -4,4 +4,4 @@ This is my first one I'm setting up for practice. I'm a couple weeks into my cod
 
 #  Subheader
 
-Adding this to my github file to practice cloning.
+This has turned into my math formulas program. This is the only program to date I've build by myself modeled from 2 different easy python projects I found at least a month ago.
