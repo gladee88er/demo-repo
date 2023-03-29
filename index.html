@@ -61,11 +61,40 @@ def total_surface_area_cylinder():
 
     return (2 * math.pi * r * h) + (2 * math.pi * r **2)
 
-#  def volume_cone():
+def volume_cone():
+    r = float(input('Radius: '))
+    h = float(input('Height: '))
 
-#  def lateral_area_cone():
+    return 1 / 3 * math.pi * r **2 * h
 
-#  def total_surface_area_cone():
+def lateral_surface_area_cone():
+    r = float(input('Radius: '))
+    h = float(input('Height: '))
+
+    return math.pi * r * math.sqrt(h **2 + r **2)
+
+def total_surface_area_cone():
+    r = float(input('Radius: '))
+    h = float(input('Height: '))
+
+    return math.pi * r * (r + math.sqrt(h **2 + r **2))
+
+def volume_sphere():
+    r = float(input('Radius: '))
+
+    return 4 / 3 * math.pi * r **3
+
+def surface_area_sphere():
+    r = float(input('Radius: '))
+
+    return 4 * math.pi * r **2
+
+def volume_pyramid():
+    l = float(input('Length: '))
+    w = float(input('Width: '))
+    h = float(input('Height: '))
+
+    return 1 / 3 * l * w * h
 
 def pythagorean_theorum():
     a = float(input('What is side a?: '))
@@ -74,26 +103,39 @@ def pythagorean_theorum():
 
     return a **2 + b **2 == c **2
 
+def quadratic_formula():
+    a = float(input('What is the number beside x squared: '))
+    b = float(input('What is the number beside x: '))
+    c = float(input('What is the constant: '))
 
-print('Welcome to my page for coding useful math equasions and some conversions. Enter a number that')
+    return -b +- math.sqrt(b **2 - 4 * a * c) / 2 * a
+
+#  def
+
+
+print('Welcome to my page for coding useful math equations and some conversions. Enter a number that')
 print('corresponds to the equation for quick answers.')
 print()
-print('1. Permeter of a triangle')
-print('2. Area of a triangle')
-print('3. Peremeter of a square')
-print('4. Area of a square')
-print('5. Circumference of a circle')
-print('6. Area of the circle is')
-print('7. Volume of a sphere')
-print('8. Surface area of a sphere')
-print('9. Volume of a cylinder')
-print('10. Lateral area of a cylinder')
-print('11. Total surface area of a cylinder')
-print('12. Volume of a cone')
-print('13. Lateral area of a cone')
-print('14. Total surface area of a cone')
-print('15. Pythagorean Theorum (a')
-print('16. Quit having fun')
+print('1. Permeter of a triangle  (P = a + b + c)' )
+print('2. Area of a triangle  (A = 1/2bh)')
+print('3. Peremeter of a square  (P = 4a)')
+print('4. Area of a square  (A = s **2)')
+print('5. Circumference of a circle  (C = 2 * pi * r)')
+print('6. Area of the circle is  (A = pi * r **2)')
+print('7. Volume of a sphere  (V = 4/3 * pi * r **3)')
+print('8. Surface area of a sphere  (4 * pi * r **2)')
+print('9. Volume of a cylinder  (V = pi * r **2 * h)')
+print('10. Lateral area of a cylinder  (A + 2 * pi * r * h)')
+print('11. Total surface area of a cylinder  (A=2πrh+2πr2)')
+print('12. Volume of a cone  (V = pi * r **2 * (h / 3))')
+print('13. Lateral surface area of a cone  ()')
+print('14. Total surface area of a cone  ()')
+print('15. Total volume of a sphere  ()')
+print('16. Total surface area of a sphere  ()')
+print('17. Total volume of a square or rectangular pyramid  ()')
+print('18. Pythagorean Theorum  ()')
+print('19. Quadratic Equation Formula  ()')
+print('1. Quit having fun')
 
 answer = int(input('Enter number to open the function: '))
 
@@ -120,13 +162,38 @@ elif answer == 7:
 
 elif answer == 8:
     print(surface_area_of_sphere())
+
 elif answer == 9:
     print(volume_of_cylinder())
+
 elif answer == 10:
     print(lateral_area_cylinder())
+
 elif answer == 11:
     print(total_surface_area_cylinder())
+
+elif answer == 12:
+    print(volume_cone())
+
+elif answer == 13:
+    print(lateral_surface_area_cone())
+
+elif answer == 14:
+    print(total_surface_area_cone())
+
 elif answer == 15:
+    print(volume_sphere())
+
+elif answer == 16:
+    print(surface_area_sphere())
+
+elif answer == 17:
+    print(volume_pyramid())
+
+elif answer == 18:
     print(pythagorean_theorum())
+
+elif answer == 19:
+    print(quadratic_formula())
 else:
     print('Quitting...')
