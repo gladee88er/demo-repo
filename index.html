@@ -110,7 +110,45 @@ def quadratic_formula():
 
     return -b +- math.sqrt(b **2 - 4 * a * c) / 2 * a
 
-#  def
+def sine():
+    opposite = float(input('Opposite side =  '))
+    hypoteneuse = float(input('Hypoteneuse side =  '))
+
+    return opposite / hypoteneuse
+
+def cosine():
+    adjacent = float(input('Adjacent side =  '))
+    hypoteneuse = float(input('Hypoteneuse side =  '))
+
+    return adjacent / hypoteneuse
+
+def tangent():
+    opposite = float(input('Opposite side =  '))
+    adjacent = float(input('Adjacent side =  '))
+
+    return opposite / adjacent
+
+def secant():
+    hypoteneuse = float(input('Hypoteneuse side =  '))
+    adjacent = float(input('Adjacent side =  '))
+
+    return hypoteneuse / adjacent
+
+def cosecant():
+    hypoteneuse = float(input('Hypoteneuse side =  '))
+    opposite = float(input('Opposite side =  '))
+
+    return hypoteneuse / opposite
+
+def cotangent():
+    adjacent = float(input('Adjacent side =  '))
+    opposite = float(input('Opposite side =  '))
+
+    return adjacent / opposite
+
+#  Unit circle radius = 1. Helps identify sine, cosine, and tangent of important trig angles ie. 15, 30, 45, 60, 90. 'y' coordinate = sine,
+#  'x' coordinate = cosine, and y / x = tangent.
+
 
 
 print('Welcome to my page for coding useful math equations and some conversions. Enter a number that')
@@ -133,8 +171,15 @@ print('14. Total surface area of a cone  ()')
 print('15. Total volume of a sphere  ()')
 print('16. Total surface area of a sphere  ()')
 print('17. Total volume of a square or rectangular pyramid  ()')
+
 print('18. Pythagorean Theorum  ()')
 print('19. Quadratic Equation Formula  ()')
+print('20. Sine SOH = opp / hyp')
+print('21. Cosine CAH = adj / hyp')
+print('22. Tangent TOA = opp / adj')
+print('23. Secant = hyp / adj')
+print('24. Cosecant = hyp / opp')
+print('25. Cotangent = adj / opp')
 print('1. Quit having fun')
 
 answer = int(input('Enter number to open the function: '))
@@ -195,5 +240,24 @@ elif answer == 18:
 
 elif answer == 19:
     print(quadratic_formula())
+
+elif answer == 20:
+    print(sine())
+
+elif answer == 21:
+    print(cosine())
+
+elif answer == 22:
+    print(tangent())
+
+elif answer == 23:
+    print(secant())
+
+elif answer == 24:
+    print(cosecant())
+
+elif answer == 25:
+    print(cotangent())
+
 else:
     print('Quitting...')
